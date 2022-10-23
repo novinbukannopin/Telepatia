@@ -1,0 +1,134 @@
+@import "./colors";
+@import "./buttons";
+@import "./typo";
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.pricing {
+  background: $lilpur;
+  padding: 70px 0 70px 0;
+  margin-top: 70px;
+  .master-card {
+    padding: 30px;
+    border-radius: 22px;
+    .btn {
+      width: 100%;
+      margin-top: 20;
+    }
+    .item-benefit {
+      margin-bottom: 20px;
+      img {
+        float: left;
+        margin-right: 8px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: map-get($font-weights, medium);
+      }
+    }
+    .name {
+      color: $navy;
+      font-size: 18px;
+      font-weight: map-get($font-weights, medium);
+    }
+    .price {
+      font-size: 36px;
+      font-weight: map-get($font-weights, semibold);
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    .support {
+      font-size: 16px;
+      font-weight: map-get($font-weights, regular);
+      margin-bottom: 40px;
+    }
+  }
+  .basic-card {
+    @extend .master-card;
+    background: $white;
+    .name {
+      color: $navy;
+    }
+    .price {
+      color: $navy;
+    }
+    .support {
+      color: $medpur;
+    }
+    .item-benefit {
+      p {
+        color: $navy;
+      }
+    }
+  }
+  .most-card {
+    @extend .master-card;
+    background: $purple;
+    .btn-primary {
+      background: $aqua !important;
+    }
+    .name {
+      color: $white;
+    }
+    .price {
+      color: $white;
+    }
+    .support {
+      color: $supportpurple;
+    }
+    .item-benefit {
+      p {
+        color: $white;
+      }
+    }
+  }
+}
+
+.header {
+  font-weight: map-get($font-weights, semibold);
+  color: $navy;
+  font-size: 46px;
+  line-height: 60px;
+  margin-top: 100px;
+}
+.description {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: map-get($font-weights, regular);
+  color: $desccolor;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.sales {
+  padding-top: 68px;
+  .brand {
+    text-align: center;
+    margin-top: 70px;
+    .brand-logos {
+      width: 724px;
+    }
+  }
+  .copywriting {
+    padding-left: 100px;
+  }
+}
+
+.navbar-tp {
+  padding-top: 30px;
+  .navbar-nav {
+    li {
+      padding-left: 50px;
+    }
+    .active {
+      color: $purple !important;
+      font-weight: map-get($font-weights, semibold) !important;
+    }
+    .nav-link {
+      color: $navy;
+      font-weight: map-get($font-weights, medium);
+    }
+  }
+}

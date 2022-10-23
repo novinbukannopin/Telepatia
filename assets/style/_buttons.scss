@@ -1,0 +1,21 @@
+@import "./colors";
+@import "./typo";
+
+.btn-master {
+  padding: 15px 26px 15px 26px;
+  border-radius: 10px;
+  font-weight: map-get($font-weights, semibold);
+  border: 0px;
+}
+
+.btn-primary {
+  @extend .btn-master;
+  color: $white;
+  background: $purple;
+}
+
+.btn-secondary {
+  @extend .btn-master;
+  color: $darpur;
+  background: $softpur;
+}
